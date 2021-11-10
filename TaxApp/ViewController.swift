@@ -29,18 +29,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func segmentedControl(_ sender: UISegmentedControl) {
-        if isNumber(number: numberTextFiled.text!) {
-            print("is number")
-            switch sender.selectedSegmentIndex {
-            case 0:
-                resultLabel.text = String(calcTax(number: numberTextFiled.text!, tax: 1.1))
-            case 1:
-                resultLabel.text = String(calcTax(number: numberTextFiled.text!, tax: 1.08))
-            default:
-                break
+        if numberTextFiled.text != "" {
+            if isNumber(number: numberTextFiled.text!) {
+                print("is number")
+                switch sender.selectedSegmentIndex {
+                case 0:
+                    resultLabel.text = String(calcTax(number: numberTextFiled.text!, tax: 1.1))
+                case 1:
+                    resultLabel.text = String(calcTax(number: numberTextFiled.text!, tax: 1.08))
+                default:
+                    break
+                }
+            } else {
+                print("error...")
             }
-        } else {
-            print("error...")
         }
     }
     
@@ -49,10 +51,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addButton(_ sender: Any) {
-        let userDefaults = UserDefaults.standard
-        numbers.append(resultLabel.text!)
-        userDefaults.set(numbers, forKey: "add")
-        tableView.reloadData()
+        if resultLabel.text != "" {
+            let userDefaults = UserDefaults.standard
+            numbers.append(resultLabel.text!)
+            userDefaults.set(numbers, forKey: "add")
+            tableView.reloadData()
+        }
     }
     
     func isNumber(number: String) ->Bool {
