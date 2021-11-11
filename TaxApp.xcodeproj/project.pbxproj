@@ -13,6 +13,7 @@
 		7F5352B0273B6F16002E6A0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5352AE273B6F16002E6A0B /* Main.storyboard */; };
 		7F5352B2273B6F19002E6A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5352B1273B6F19002E6A0B /* Assets.xcassets */; };
 		7F5352B5273B6F19002E6A0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5352B3273B6F19002E6A0B /* LaunchScreen.storyboard */; };
+		7F7A2BA6273B72E0000874A2 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7A2BA5273B72E0000874A2 /* TotalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7F5352B1273B6F19002E6A0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5352B4273B6F19002E6A0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F5352B6273B6F19002E6A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7A2BA5273B72E0000874A2 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7F5352AA273B6F16002E6A0B /* SceneDelegate.swift */,
 				7F5352AC273B6F16002E6A0B /* ViewController.swift */,
 				7F5352AE273B6F16002E6A0B /* Main.storyboard */,
+				7F7A2BA5273B72E0000874A2 /* TotalViewController.swift */,
 				7F5352B1273B6F19002E6A0B /* Assets.xcassets */,
 				7F5352B3273B6F19002E6A0B /* LaunchScreen.storyboard */,
 				7F5352B6273B6F19002E6A0B /* Info.plist */,
@@ -141,6 +144,7 @@
 				7F5352AD273B6F16002E6A0B /* ViewController.swift in Sources */,
 				7F5352A9273B6F16002E6A0B /* AppDelegate.swift in Sources */,
 				7F5352AB273B6F16002E6A0B /* SceneDelegate.swift in Sources */,
+				7F7A2BA6273B72E0000874A2 /* TotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
